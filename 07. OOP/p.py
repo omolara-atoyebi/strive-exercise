@@ -6,6 +6,7 @@ class Car(Vehicle):
         self.country = country
     def country_of_production(self):
         print('The country of production is:' , self.country)
-        #return self.country
+        return 
 car_model = Car('Volvo', 20000, 2020, 'red', 'japan')
-print(car_model.country_of_production())   
+
+#car_model.country_of_production()

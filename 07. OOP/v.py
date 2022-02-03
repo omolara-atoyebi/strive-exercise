@@ -6,5 +6,5 @@ class Vehicle:
         self.colour = colour
     def selling_price(self):
         return self.price
-vehincle_model = Vehicle('toyota', 100 , 2020, 'black' )
-print(vehincle_model.selling_price())
+#vehincle_model = Vehicle('toyota', 100 , 2020, 'black' )
+#print(vehincle_model.selling_price())
