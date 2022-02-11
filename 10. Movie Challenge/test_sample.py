@@ -19,15 +19,16 @@ def norm_max_min():
 df4 = print(norm_max_min())
 
 
-#Rating_max_min = df.copy()
-# def norm_max_min():
-#     Rating_max_min = df.copy()
-#     column= 'budget ($ Mil)'
-#     #for cols in Rating_max_min.columns:
-#     Rating_max_min[column] = (Rating_max_min[column] -  Rating_max_min[column].min())/ (Rating_max_min[column].max() - Rating_max_min[column].min())
-#     return Rating_max_min[column]
+
+# def mean():
+#     Rating_max_min = df4.copy()
+#     column= 'Rating_movtime'
+    #for cols in Rating_max_min.columns:
+    # Rating_max_min[column] = (Rating_max_min[column] -  Rating_max_min[column].min())/ (Rating_max_min[column].max() - Rating_max_min[column].min())
+    # return Rating_max_min[column]
 # print(norm_max_min())
 
+# plot for ratings and year of release 
 
 plt.bar(df4['rating'],df4['release'],width = 0.4, label = 'ratings per year')
 plt.grid(True,linestyle = '--', color = 'dimgrey')
@@ -35,3 +36,5 @@ plt.ylabel('release year')
 plt.xlabel('ratings')
 plt.legend()
 plt.show()
+
+df4.plot.scatter(x = 'release', y = 'rating', color = 'darkred', s = 25, figsize = (12,2))
